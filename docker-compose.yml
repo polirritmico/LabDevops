@@ -1,0 +1,6 @@
+services:
+  web:
+    container_name: demo-django-devops
+    image: docker.io/polirritmico/demo-django-devops:latest
+    ports:
+      - 8001:8000
