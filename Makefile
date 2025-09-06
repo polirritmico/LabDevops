@@ -18,6 +18,7 @@ test-only:
 		echo "not in env. Run 'source .venv/bin/activate'"; \
 		exit 1; \
 	else \
+	 	DJANGO_SETTINGS_MODULE=devopsdemo.settings \
 		python -m coverage run -m pytest; \
 	fi
 
