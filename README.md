@@ -22,7 +22,7 @@ technologies:
 git clone git@github.com:polirritmico/LabDevops.git
 ```
 
-2. use docker compose:
+2. Use Docker Compose:
 
 ```bash
 docker compose up -d web
@@ -69,11 +69,11 @@ detect early incompatibilities or design conflicts, etc.
 
 - Faster feedback loop: The code we made as developers is our intentions on what
   we think at that moment would be the right approach based on the concerns. But
-  this is just an hipotesis, to check if that code work, we need to pass some
+  this is just an hypothesis, to check if that code work, we need to pass some
   kind of testing suites. If it does, then we are confident that our new code
   doesn't break anything. Every time we write code, as developers we want to
   know in the least amount of time if that code works or not. Since in that
-  moment we have a high knowledge on the codebase, we are in a better possition
+  moment we have a high knowledge on the codebase, we are in a better position
   to fix any issue faster. If the error takes up to two months on raise, then we
   mostly have forgot the little details on the code, and to fix-it we have to
   backtrack and study the code again.
@@ -84,6 +84,17 @@ detect early incompatibilities or design conflicts, etc.
 - More eyes auditoring the code.
 
 As we see, all those reasons helps forward to improve the code quality.
+
+## 🏭 Pipeline
+
+### Github Actions
+
+Currently, there is a `Build & Push to Docker Hub` action in the GitHub workflow
+scripts that build the Docker image and push it to the Docker hub. The action is
+trigger by any merge into the `main` branch.
+
+You could find the builded Docker image here:
+[Docker Hub](https://hub.docker.com/repository/docker/polirritmico/demo-django-devops/general).
 
 ## Project directory organization
 
