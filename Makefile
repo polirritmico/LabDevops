@@ -16,7 +16,7 @@ help:
 test-only:
 	@if [ -z "$$VIRTUAL_ENV" ]; then \
 		echo "Not in env. Run 'source .venv/bin/activate'"; \
-		echo "For detailed instructions check the 'make help' and the README"; \
+		echo "For detailed instructions check 'make help' and the README"; \
 		exit 1; \
 	else \
 	 	DJANGO_SETTINGS_MODULE=devopsdemo.settings \
