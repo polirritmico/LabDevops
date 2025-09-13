@@ -5,11 +5,19 @@ guidelines.
 
 ## Base instructions
 
+For first-time contributors:
+
 1. Fork the repository.
-2. Create your working branch.
-3. Set your development environment
+2. Set your development environment
+3. Create your working branch.
 4. Run and pass the tests with `pytest`.
-5. Create a PR from your branch into the project's main branch.
+5. Sync and create a PR from your branch into the project's `development`
+   branch.
+
+For core maintainers (contributors with granted permissions after accepted PRs),
+push changes directly into `development` branch.
+
+## Pipeline
 
 ## Requirements
 
