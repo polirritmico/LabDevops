@@ -25,10 +25,18 @@ git clone git@github.com:polirritmico/LabDevops.git
 2. Use Docker Compose:
 
 ```bash
-docker compose up -d web
+docker compose up -d
 ```
 
 3. Check the site at: `http://localhost:8001`.
+
+#### Using the production image from Docker Hub
+
+Just run the production service with docker compose:
+
+```bash
+docker compose run web-production
+```
 
 ### Manual build & Run
 
