@@ -58,12 +58,32 @@ By default it executes **pytest** with **coverage**.
 
 ## Development workflow
 
-The project adheres to the trunk-based workflow on the `develop` branch to
-follow the most modern practices in CI/CD.
+The project follows a trunk-based workflow on the `develop` branch, aligning
+with modern CI/CD practices.
+
+This decision attempt to encourage the following practices:
 
 TODO: Add a list with the benefits of trunk--based over gitflow like encourage
 frequent merges, reducing feedback delays, transparent code between developers,
 detect early incompatibilities or design conflicts, etc.
+
+- Faster feedback loop: The code we made as developers is our intentions on what
+  we think at that moment would be the right approach based on the concerns. But
+  this is just an hipotesis, to check if that code work, we need to pass some
+  kind of testing suites. If it does, then we are confident that our new code
+  doesn't break anything. Every time we write code, as developers we want to
+  know in the least amount of time if that code works or not. Since in that
+  moment we have a high knowledge on the codebase, we are in a better possition
+  to fix any issue faster. If the error takes up to two months on raise, then we
+  mostly have forgot the little details on the code, and to fix-it we have to
+  backtrack and study the code again.
+- **Frequent merges:** The time that the code is outside the trunk branch
+  (develop) is time at which the possibility of conflicts in design and
+  implementation grows up.
+- Less design conflicts.
+- More eyes auditoring the code.
+
+As we see, all those reasons helps forward to improve the code quality.
 
 ## Project directory organization
 
