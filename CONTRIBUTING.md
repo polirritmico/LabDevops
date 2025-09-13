@@ -1,7 +1,15 @@
-# Contributing
+# Contributions Guides
 
 Here are instructions on how to set the environment and other contributions
 guidelines.
+
+## Base instructions
+
+1. Fork the repository.
+2. Create your working branch.
+3. Set your development environment
+4. Run and pass the tests with `pytest`.
+5. Create a PR from your branch into the project's main branch.
 
 ## Requirements
 
@@ -12,6 +20,8 @@ guidelines.
 
 Check the instructions on the README. If you have any doubt, feel free to open a
 new issue.
+
+---
 
 ## Setting up the development environment
 
@@ -34,9 +44,11 @@ python -m pip install -r requirements.txt
 python -m pip install -r requirements-dev.txt
 ```
 
-Now the environment is ready.
+Now the environment is ready!
 
 > [!TIP]
 >
 > In the repository there's a Makefile that you could use to run pytest, build
 > the Docker image, run pytest through coverage. Check `make help`.
+
+> _Happy codding ☕!_
