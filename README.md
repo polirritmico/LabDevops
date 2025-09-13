@@ -61,29 +61,25 @@ By default it executes **pytest** with **coverage**.
 The project follows a trunk-based workflow on the `develop` branch, aligning
 with modern CI/CD practices.
 
-This decision attempt to encourage the following practices:
+This decision aims to encourage the following practices:
 
-TODO: Add a list with the benefits of trunk--based over gitflow like encourage
-frequent merges, reducing feedback delays, transparent code between developers,
-detect early incompatibilities or design conflicts, etc.
+- **Faster feedback:** Developers quickly learn if their code works through
+  diferent layers of tests allowing rapid fixes while the "code context" is
+  still fresh.
+- **Frequent merges:** Keeping code in sync with `develop` reduces the chance of
+  conflicts and duplicated work.
+- **Early detection of issues:** Problems and design conflicts are identified
+  sooner, preventing long-term technical debt.
+- **Transparent codebase:** Regular merges and shared visibility allow more eyes
+  to review and audit changes, improving overall code and design quality.
 
-- Faster feedback loop: The code we made as developers is our intentions on what
-  we think at that moment would be the right approach based on the concerns. But
-  this is just an hypothesis, to check if that code work, we need to pass some
-  kind of testing suites. If it does, then we are confident that our new code
-  doesn't break anything. Every time we write code, as developers we want to
-  know in the least amount of time if that code works or not. Since in that
-  moment we have a high knowledge on the codebase, we are in a better position
-  to fix any issue faster. If the error takes up to two months on raise, then we
-  mostly have forgot the little details on the code, and to fix-it we have to
-  backtrack and study the code again.
-- **Frequent merges:** The time that the code is outside the trunk branch
-  (develop) is time at which the possibility of conflicts in design and
-  implementation grows up.
-- Less design conflicts.
-- More eyes auditoring the code.
-
-As we see, all those reasons helps forward to improve the code quality.
+> [!NOTE]
+>
+> For newcomers, there is still a confidence issue from the project's side. For
+> their first PRs, a more branch-oriented workflow is required, allowing safe
+> contributions before merging into `develop`.
+>
+> Check [CONTRIBUTING](CONTRIBUTING.md) for more details.
 
 ## 🏭 Pipeline
 
@@ -91,7 +87,7 @@ As we see, all those reasons helps forward to improve the code quality.
 
 Currently, there is a `Build & Push to Docker Hub` action in the GitHub workflow
 scripts that build the Docker image and push it to the Docker hub. The action is
-trigger by any merge into the `main` branch.
+trigger by any push into the `main` branch.
 
 You could find the builded Docker image here:
 [Docker Hub](https://hub.docker.com/repository/docker/polirritmico/demo-django-devops/general).
