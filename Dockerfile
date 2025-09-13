@@ -5,7 +5,7 @@ LABEL maintainer="Eduardo Bray <ed.bray@duocuc.cl>"
 WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-RUN userdadd -ms /bin/bash devops
+RUN useradd -ms /bin/bash devops
 USER devops
 COPY --chown=devops:devops requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
