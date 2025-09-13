@@ -2,7 +2,7 @@ SHELL = /bin/bash
 
 .PHONY: default help test test-only docker-build bash
 
-TARGET_STAGE ?= development
+TARGET_STAGE ?= develop
 
 default: test
 
