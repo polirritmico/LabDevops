@@ -11,11 +11,12 @@ help:
 	@echo "- Use 'make test' (default) to run all tests and generate a coverage html report"
 	@echo "- Use 'make test-only' to only run all tests"
 	@echo "- Use 'make docker-build' to generate the docker image"
-	@echo "- Use 'make bash' to enter into a bash terminal inside the running container"
+	@echo "- Use 'make bash' to enter into a bash terminal whatinside the running container"
 
 test-only:
 	@if [ -z "$$VIRTUAL_ENV" ]; then \
-		echo "not in env. Run 'source .venv/bin/activate'"; \
+		echo "Not in env. Run 'source .venv/bin/activate'"; \
+		echo "For detailed instructions check the 'make help' and the README"; \
 		exit 1; \
 	else \
 	 	DJANGO_SETTINGS_MODULE=devopsdemo.settings \
