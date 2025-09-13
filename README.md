@@ -28,7 +28,7 @@ git clone git@github.com:polirritmico/LabDevops.git
 docker compose up -d web
 ```
 
-3. Check the site: `http://localhost:8001`.
+3. Check the site at: `http://localhost:8001`.
 
 ### Manual build & Run
 
@@ -53,6 +53,12 @@ make help
 ```
 
 By default it executes **pytest** with **coverage**.
+
+> [!NOTE]
+>
+> Some distros do not include `make` command by default. Try installing
+> `build-essential`, `make`, `base-devel` or a similar package. Check your
+> distro documentation for the correct package name.
 
 ---
 
