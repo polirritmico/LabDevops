@@ -106,23 +106,28 @@ trigger by any push into the `main` branch.
 You could find the builded Docker image here:
 [Docker Hub](https://hub.docker.com/repository/docker/polirritmico/demo-django-devops/general).
 
+To use that automatically generated production build image check the **Run &
+Build** section.
+
 ## Project directory organization
 
 The project has the following directories structure:
 
 ```
 .
-├── devopsdemo/
-├── tests/
-├── web/
 ├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
+├── devopsdemo
 ├── docker-compose.yml
 ├── Dockerfile
+├── htmlcov
 ├── LICENSE
 ├── Makefile
 ├── manage.py
 ├── README.md
 ├── requirements-dev.txt
-└── requirements.txt
+├── requirements.txt
+├── tests
+└── web
 ```
