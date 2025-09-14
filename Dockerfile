@@ -7,9 +7,9 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 RUN useradd -ms /bin/bash devops \
     && install -d -o devops -g devops /app
-USER devops
 COPY --chown=devops:devops requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+USER devops
 COPY . .
 
 
