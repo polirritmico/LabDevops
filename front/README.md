@@ -35,7 +35,7 @@ docker compose up -d
 Just run the production service with docker compose:
 
 ```bash
-docker compose up web-production
+docker compose up -d web-production
 ```
 
 ### Manual build & Run

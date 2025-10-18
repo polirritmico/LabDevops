@@ -41,6 +41,12 @@ The project currently uses these tools:
 
 ## Pipeline
 
+As stated in the `README`, currently the project has a pipeline process to build
+and push the built project Docker image into Docker Hub.
+
+Check the Github Workflow automation script at:
+`.github/workflows/build-push.yml`.
+
 ## Dev requirements
 
 - Python >=3.13
